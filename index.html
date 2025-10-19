@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Rapido Partner Rewards - Diwali Offer 🎇</title>
+<meta name="description" content="Celebrate Diwali with Rapido Partner Rewards! Join our official Telegram and explore exciting daily bonuses, special festive offers, and trusted earning opportunities.">
+<meta name="keywords" content="Rapido rewards, partner program, daily bonus, offers, festive earnings, Rapido Diwali, join Telegram">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:"Poppins",Arial,sans-serif;
+    background:linear-gradient(180deg,#000000,#1a1a1a 50%,#000000);
+    color:#fff;
+    overflow-x:hidden;
+    position:relative;
+  }
+
+  /* Floating festive lights */
+  .light{
+    position:absolute;
+    border-radius:50%;
+    background:rgba(255,202,5,0.8);
+    box-shadow:0 0 30px rgba(255,202,5,0.8);
+    animation:float 8s ease-in-out infinite;
+  }
+  .light:nth-child(1){width:20px;height:20px;top:20%;left:10%;animation-delay:0s;}
+  .light:nth-child(2){width:15px;height:15px;top:60%;left:80%;animation-delay:2s;}
+  .light:nth-child(3){width:25px;height:25px;top:40%;left:50%;animation-delay:4s;}
+  .light:nth-child(4){width:18px;height:18px;top:70%;left:25%;animation-delay:1s;}
+  .light:nth-child(5){width:22px;height:22px;top:15%;left:70%;animation-delay:3s;}
+  @keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-20px);}}
+
+  header{text-align:center;padding:50px 20px;animation:fadeInDown 1.2s ease;}
+  header h1{
+    font-size:2.5em;
+    font-weight:700;
+    color:#ffca05;
+    text-shadow:0 0 20px rgba(255,202,5,0.9),0 0 40px rgba(255,202,5,0.6);
+  }
+  header p{color:#fff;font-weight:500;margin-top:10px;}
+
+  .lang-toggle{
+    position:fixed;right:20px;top:20px;
+    padding:8px 14px;background:#ffca05;color:#000;
+    font-weight:700;border:none;border-radius:20px;cursor:pointer;
+  }
+
+  .telegram-btn{
+    display:inline-block;background:#ffca05;color:#000;
+    font-weight:700;text-decoration:none;padding:14px 28px;
+    border-radius:30px;transition:all .3s;
+    box-shadow:0 0 20px rgba(255,202,5,0.8);
+    margin-top:25px;animation:pulse 2s infinite;
+  }
+  .telegram-btn:hover{transform:scale(1.08);box-shadow:0 0 35px #ffca05;}
+
+  section{padding:60px 20px;text-align:center;}
+  h2{color:#ffca05;font-weight:700;text-shadow:0 0 10px rgba(255,202,5,0.6);}
+  .countdown{font-size:2em;margin-top:20px;color:#fff;font-weight:600;}
+
+  .highlights{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;margin-top:40px;}
+  .highlight{
+    background:rgba(255,202,5,0.1);
+    border:1px solid rgba(255,202,5,0.3);
+    border-radius:20px;padding:20px;width:260px;
+    backdrop-filter:blur(10px);
+    transition:.3s;color:#ffca05;font-weight:600;
+  }
+  .highlight:hover{transform:translateY(-5px);background:rgba(255,202,5,0.2);}
+
+  .testimonials{
+    max-width:1100px;margin:0 auto;background:rgba(255,255,255,0.05);
+    padding:40px;border-radius:20px;
+  }
+  .cards{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin-top:20px;}
+  .card{
+    background:rgba(255,255,255,0.07);padding:20px;border-radius:20px;width:260px;
+    text-align:center;transition:.3s;color:#fff;
+  }
+  .card:hover{background:rgba(255,202,5,0.1);transform:translateY(-6px);}
+  .avatar{width:90px;height:90px;border-radius:50%;border:3px solid #ffca05;object-fit:cover;margin-bottom:12px;}
+
+  footer{
+    background:#ffca05;padding:40px;text-align:center;color:#000;position:relative;
+  }
+
+  .diya{font-size:2rem;animation:flicker 1.5s infinite alternate;}
+  @keyframes flicker{0%{opacity:0.5;filter:brightness(0.8);}100%{opacity:1;filter:brightness(1.3);}}
+
+  @keyframes fadeInDown{0%{opacity:0;transform:translateY(-30px);}100%{opacity:1;transform:translateY(0);}}
+  @keyframes pulse{0%,100%{box-shadow:0 0 15px rgba(255,202,5,0.6);}50%{box-shadow:0 0 35px rgba(255,202,5,1);}}
+
+  @media(max-width:600px){
+    .highlights, .cards {flex-direction:column;gap:15px;}
+    header h1{font-size:2em;}
+    .telegram-btn{padding:12px 20px;}
+  }
+</style>
+</head>
+
+<body>
+<!-- Floating festive lights -->
+<div class="light"></div><div class="light"></div><div class="light"></div><div class="light"></div><div class="light"></div>
+
+<button class="lang-toggle" id="langBtn" aria-label="Toggle Language">हिन्दी</button>
+
+<header>
+  <h1 data-en="Rapido Partner Rewards 🎆" data-hi="Rapido पार्टनर रिवॉर्ड्स 🎆">Rapido Partner Rewards 🎆</h1>
+  <p data-en="Celebrate this Diwali with Rapido! Become a partner and unlock exciting festive rewards every day." data-hi="इस दिवाली Rapido के साथ सेलिब्रेट करें! पार्टनर बनें और हर दिन शानदार रिवॉर्ड्स पाएं।">
+    Celebrate this Diwali with Rapido! Become a partner and unlock exciting festive rewards every day.
+  </p>
+  <a href="https://t.me/+hBHUIZj5e4gwOWJl" target="_blank" class="telegram-btn" data-en="Join Telegram 🎯" data-hi="Telegram से जुड़ें 🎯">Join Telegram 🎯</a>
+</header>
+
+<section>
+  <h2 data-en="Festive Offer Ends In:" data-hi="त्योहार का ऑफर समाप्त होने में:">Festive Offer Ends In:</h2>
+  <div class="countdown" id="countdown">00:05:00</div>
+</section>
+
+<section>
+  <h2 data-en="Why Join Rapido Partner Program?" data-hi="Rapido पार्टनर प्रोग्राम क्यों जॉइन करें?">Why Join Rapido Partner Program?</h2>
+  <div class="highlights">
+    <div class="highlight" data-en="🎁 Diwali Bonus Rewards" data-hi="🎁 दिवाली बोनस रिवॉर्ड्स">🎁 Diwali Bonus Rewards</div>
+    <div class="highlight" data-en="⚡ Quick Withdrawals" data-hi="⚡ तुरंत निकासी">⚡ Quick Withdrawals</div>
+    <div class="highlight" data-en="💼 Daily Partner Benefits" data-hi="💼 रोज़ाना पार्टनर बेनिफिट्स">💼 Daily Partner Benefits</div>
+    <div class="highlight" data-en="🛡️ Trusted Platform" data-hi="🛡️ भरोसेमंद प्लेटफॉर्म">🛡️ Trusted Platform</div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <h2 data-en="What Our Partners Say" data-hi="हमारे पार्टनर्स की राय">What Our Partners Say</h2>
+  <div class="cards">
+    <div class="card">
+      <img class="avatar" src="https://i.pinimg.com/736x/48/5a/01/485a0101007cd39acfb3fbeeefcc1075.jpg" alt="Partner 1" />
+      <h4 data-en="Rohan Sharma" data-hi="रोहन शर्मा">Rohan Sharma</h4>
+      <p data-en="Rapido Rewards made my Diwali more rewarding!" data-hi="Rapido रिवॉर्ड्स ने मेरी दिवाली को और भी खास बना दिया!">Rapido Rewards made my Diwali more rewarding!</p>
+    </div>
+    <div class="card">
+      <img class="avatar" src="https://photosmint.com/wp-content/uploads/2025/03/Indian-Beauty-DP.jpeg" alt="Partner 2" />
+      <h4 data-en="Sneha Kapoor" data-hi="स्नेहा कपूर">Sneha Kapoor</h4>
+      <p data-en="Love how simple and transparent the reward system is!" data-hi="रिवॉर्ड सिस्टम बहुत आसान और पारदर्शी है!">Love how simple and transparent the reward system is!</p>
+    </div>
+    <div class="card">
+      <img class="avatar" src="https://i.pinimg.com/236x/07/db/6a/07db6ab7fdf44787abe10984855b8ff8.jpg" alt="Partner 3" />
+      <h4 data-en="Priya Rao" data-hi="प्रिया राव">Priya Rao</h4>
+      <p data-en="Festive rewards and instant benefits — I’m loving it!" data-hi="फेस्टिव रिवॉर्ड्स और तुरंत फायदे — मुझे बहुत पसंद है!">Festive rewards and instant benefits — I’m loving it!</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p data-en="Join our Telegram and make this Diwali brighter with Rapido Partner Rewards! 🪔" data-hi="हमारे Telegram से जुड़ें और Rapido पार्टनर रिवॉर्ड्स के साथ इस दिवाली को और चमकदार बनाएं! 🪔"></p>
+  <div class="diya">🪔🪔🪔</div>
+  <a href="https://t.me/+hBHUIZj5e4gwOWJl" target="_blank" class="telegram-btn" data-en="Join Telegram 🎯" data-hi="Telegram से जुड़ें 🎯">Join Telegram 🎯</a>
+</footer>
+
+<script>
+// Language Toggle
+const langBtn=document.getElementById('langBtn');
+let current='en';
+function translate(lang){
+  document.querySelectorAll('[data-en]').forEach(el=>{
+    el.innerHTML=el.getAttribute('data-'+lang);
+  });
+}
+langBtn.addEventListener('click',()=>{
+  current=current==='en'?'hi':'en';
+  langBtn.innerText=current==='en'?'हिन्दी':'English';
+  translate(current);
+});
+
+// Countdown Timer (5 minutes)
+const endTime=new Date().getTime()+5*60*1000;
+function updateCountdown(){
+  const now=new Date().getTime();
+  let diff=Math.max(0,Math.floor((endTime-now)/1000));
+  const minutes=String(Math.floor(diff/60)).padStart(2,'0');
+  const seconds=String(diff%60).padStart(2,'0');
+  document.getElementById('countdown').textContent=`00:${minutes}:${seconds}`;
+  if(diff>0) requestAnimationFrame(updateCountdown);
+}
+updateCountdown();
+</script>
+</body>
+</html>
